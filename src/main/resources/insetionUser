@@ -1,0 +1,6 @@
+-- Insert data
+
+INSERT INTO users VALUES (2, 'syvyjAAN', '$2a$10$qrkciPL9qeMrOvTTO/Bsn.IDh9aNP5gPDS8hK81oKUzL21jmd.byO',
+                          'andriiandrosiukk@gmail.com','530778766');
+
+INSERT INTO user_roles VALUES (2, 2);
