@@ -12,10 +12,9 @@
         <intercept-url pattern="/welcome" access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')"/>
         <intercept-url pattern="/admin" access="hasRole('ROLE_ADMIN')"/>
 
-        <form-login login-page="/index" default-target-url="/welcome" authentication-failure-url="/login?error"
+        <form-login login-page="/index" default-target-url="/welcome"
                     username-parameter="username" password-parameter="password"/>
 
-        <logout logout-success-url="/login?logout"/>
     </http>
 
     <authentication-manager alias="authenticationManager">
