@@ -27,7 +27,7 @@
 <body>
 
 <div class="container">
-
+    REGISTRATION PAGE
     <form:form method="POST" modelAttribute="userForm" class="form-signin">
         <h2 class="form-signin-heading">Create your account</h2>
         <spring:bind path="username">
@@ -50,6 +50,22 @@
                 <form:input type="password" path="confirmPassword" class="form-control"
                             placeholder="Confirm your password"></form:input>
                 <form:errors path="confirmPassword"></form:errors>
+            </div>
+        </spring:bind>
+
+        <spring:bind path="email">
+            <div class="form-group ${status.error ? 'has-error' : ''}">
+                <form:input type="text" path="email" class="form-control"
+                            placeholder="Wpisz swoj email"></form:input>
+                <form:errors path="email"></form:errors>
+            </div>
+        </spring:bind>
+
+        <spring:bind path="phone">
+            <div class="form-group ${status.error ? 'has-error' : ''}">
+                <form:input type="text" path="phone" class="form-control"
+                            placeholder="Wpisz swoj numer telefonu"></form:input>
+                <form:errors path="phone"></form:errors>
             </div>
         </spring:bind>
 
