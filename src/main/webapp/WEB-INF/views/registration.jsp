@@ -125,10 +125,13 @@
                     </div>
                 </spring:bind>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
-                </div>
+                <spring:bind path="message">
+                        <div class="form-group ${status.error ? 'has-error' : ''}">
+                            <form:textarea path="message" cols="30" rows="10" class="form-control"
+                                                                placeholder="Napisz wiadomość"></form:textarea >
+                            <form:errors path="message"></form:errors>
+                        </div>
+                </spring:bind>
 
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
