@@ -5,10 +5,10 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 <!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,81 +26,34 @@
 <body>
 <%--OLD VERSION--%>
 <div class="container">
-    <form:form method="POST" modelAttribute="userForm" class="form-signin">
-        <h2 class="form-signin-heading">Create your account</h2>
-        <spring:bind path="username">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="username" class="form-control" placeholder="Username"
-                            autofocus="true"></form:input>
-                <form:errors path="username"></form:errors>
-            </div>
-        </spring:bind>
 
-        <spring:bind path="password">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
-                <form:errors path="password"></form:errors>
-            </div>
-        </spring:bind>
-
-        <spring:bind path="confirmPassword">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="password" path="confirmPassword" class="form-control"
-                            placeholder="Confirm your password"></form:input>
-                <form:errors path="confirmPassword"></form:errors>
-            </div>
-        </spring:bind>
-
-        <spring:bind path="email">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="email" class="form-control"
-                            placeholder="Wpisz swoj email"></form:input>
-                <form:errors path="email"></form:errors>
-            </div>
-        </spring:bind>
-
-        <spring:bind path="phone">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="phone" class="form-control"
-                            placeholder="Wpisz swoj numer telefonu"></form:input>
-                <form:errors path="phone"></form:errors>
-            </div>
-        </spring:bind>
-
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-    </form:form>
 </div>
 <!-- /container -->
 
 <!-- START: header -->
-
 <header role="banner" class="probootstrap-header">
     <div class="container-fluid">
-        <a href="index.html" class="probootstrap-logo">Trainer<span>.</span></a>
+        <a href="index" class="probootstrap-logo">
+            Wszystkie zwycięstwa zaczynają się od zwycięstwa nad sobą  <span>©</span></a>
 
         <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
         <div class="mobile-menu-overlay"></div>
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
             <ul class="probootstrap-main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="index">O mnie</a></li>
+                <li><a href="registration">Zapisy</a></li>
             </ul>
             <ul class="probootstrap-header-social hidden-xs">
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="https://www.facebook.com/yaroslavkhrunyk"><i class="icon-facebook2"></i></a></li>
+                <li><a href="https://www.instagram.com/jarofit_trainer/?hl=ru"><i class="icon-instagram2"></i></a></li>
             </ul>
             <div class="extra-text visible-xs">
                 <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
                 <h5>Connect With Me</h5>
                 <ul class="social-buttons">
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                    <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                    <li><a href="https://www.facebook.com/yaroslavkhrunyk?__tn__=%2Cd-]-h-R&eid=ARAtz-PeJffLtfpZeYtCoGozr-N_g7dQKqCDYdbg1MvzolOGC_eQHo5mbQr2HfzaxmwW45z6qiJTpBFn"><i class="icon-facebook2"></i></a></li>
+                    <li><a href="https://www.instagram.com/jarofit_trainer/?hl=ru"><i class="icon-instagram2"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -109,7 +62,7 @@
 <!-- END: header -->
 
 <!-- START: section -->
-<section class="probootstrap-intro probootstrap-intro-inner" style="background-image: url(img/hero_bg_1_b.jpg);" data-stellar-background-ratio="0.5">
+<section class="probootstrap-intro probootstrap-intro-inner" style="background-image: url(${contextPath}/resources/img/hero_bg_1_b.jpg);" data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row">
             <div class="col-md-7 probootstrap-intro-text">
@@ -127,41 +80,62 @@
     <section id="next-section" class="probootstrap-section">
         <div class="container">
             <div class="col-md-6">
-                <form action="#" method="post" class="probootstrap-form">
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject">
+            <form:form method="POST" modelAttribute="userForm" class="form-signin">
+                <spring:bind path="username">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="text" path="username" class="form-control" placeholder="Username"
+                                    autofocus="true"></form:input>
+                        <form:errors path="username"></form:errors>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="fname">First Name</label>
-                                <input type="text" class="form-control" id="fname" name="fname">
+                </spring:bind>
+                <div class="row">
+                    <div class="col-md-6">
+                        <spring:bind path="password">
+                            <div class="form-group ${status.error ? 'has-error' : ''}">
+                                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
+                                <form:errors path="password"></form:errors>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="lname">Last Name</label>
-                                <input type="text" class="form-control" id="lname" name="lname">
+                        </spring:bind>
+                    </div>
+                    <div class="col-md-6">
+                        <spring:bind path="confirmPassword">
+                            <div class="form-group ${status.error ? 'has-error' : ''}">
+                                <form:input type="password" path="confirmPassword" class="form-control"
+                                            placeholder="Confirm your password"></form:input>
+                                <form:errors path="confirmPassword"></form:errors>
                             </div>
-                        </div>
+                        </spring:bind>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+
+                <spring:bind path="email">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="text" path="email" class="form-control"
+                                    placeholder="Wpisz swoj email"></form:input>
+                        <form:errors path="email"></form:errors>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject">
+                </spring:bind>
+
+                <spring:bind path="phone">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="text" path="phone" class="form-control"
+                                    placeholder="Wpisz swoj numer telefonu"></form:input>
+                        <form:errors path="phone"></form:errors>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
-                    </div>
-                </form>
+                </spring:bind>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea cols="30" rows="10" class="form-control" id="message" name="message"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+                </div>
+            </form:form>
             </div>
 
-
-            /////////////////////////////////////
             <div class="col-md-5 col-md-push-1">
                 <h3 class="mt0">Get In Touch</h3>
                 <ul class="probootstrap-contact-info">

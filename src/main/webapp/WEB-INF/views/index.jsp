@@ -27,7 +27,6 @@
 <body>
 
 <!-- START: header -->
-
 <header role="banner" class="probootstrap-header">
     <div class="container-fluid">
         <a href="index" class="probootstrap-logo">
