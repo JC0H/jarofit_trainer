@@ -66,9 +66,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 probootstrap-intro-text">
-                <h1 class="probootstrap-animate" data-animate-effect="fadeIn">Contact</h1>
+                <h1 class="probootstrap-animate" data-animate-effect="fadeIn">Zapisy</h1>
                 <div class="probootstrap-subtitle probootstrap-animate" data-animate-effect="fadeIn">
-                    <h2>Free Template by <a href="https://uicookies.com">uicookies.com</a></h2>
+                    <h2>Trening profesionalny</h2>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
             <form:form method="POST" modelAttribute="userForm" class="form-signin">
                 <spring:bind path="username">
                     <div class="form-group ${status.error ? 'has-error' : ''}">
-                        <form:input type="text" path="username" class="form-control" placeholder="Username"
+                        <form:input type="text" path="username" class="form-control" placeholder="Imię"
                                     autofocus="true"></form:input>
                         <form:errors path="username"></form:errors>
                     </div>
@@ -92,7 +92,7 @@
                     <div class="col-md-6">
                         <spring:bind path="password">
                             <div class="form-group ${status.error ? 'has-error' : ''}">
-                                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
+                                <form:input type="password" path="password" class="form-control" placeholder="Hasło"></form:input>
                                 <form:errors path="password"></form:errors>
                             </div>
                         </spring:bind>
@@ -101,7 +101,7 @@
                         <spring:bind path="confirmPassword">
                             <div class="form-group ${status.error ? 'has-error' : ''}">
                                 <form:input type="password" path="confirmPassword" class="form-control"
-                                            placeholder="Confirm your password"></form:input>
+                                            placeholder="Potwierdz hasło"></form:input>
                                 <form:errors path="confirmPassword"></form:errors>
                             </div>
                         </spring:bind>
@@ -120,7 +120,7 @@
                 <spring:bind path="phone">
                     <div class="form-group ${status.error ? 'has-error' : ''}">
                         <form:input type="text" path="phone" class="form-control"
-                                    placeholder="Wpisz swoj numer telefonu"></form:input>
+                                    placeholder="Wpisz swoj numer telefonu do kontaktu"></form:input>
                         <form:errors path="phone"></form:errors>
                     </div>
                 </spring:bind>
@@ -137,15 +137,15 @@
             </div>
 
             <div class="col-md-5 col-md-push-1">
-                <h3 class="mt0">Get In Touch</h3>
+                <h3 class="mt0">Albo zadzwoń bezpośrednio</h3>
                 <ul class="probootstrap-contact-info">
-                    <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-                    <li><i class="icon-mail"></i><span>info@domain.com</span></li>
                     <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                    <li><i class="icon-location2"></i> <span>Metro młociny ??</span></li>
+                    <li><i class="icon-mail"></i><span>naftowyk@domain.com</span></li>
                 </ul>
 
                 <h3>Feedback</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                <p>Odpowiedż otrzymasz w ciągu kilku godzin</p>
             </div>
         </div>
     </section>
@@ -161,41 +161,14 @@
                     <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli. <a href="#">Learn More</a></p>
                 </div>
             </div>
-            <div class="col-md-3 col-md-push-1">
-                <div class="probootstrap-footer-widget">
-                    <h4>Gym Hours</h4>
-                    <ul class="probootstrap-footer-link">
-                        <li>Week Days: 05:00 – 22:00</li>
-                        <li>Saturday: CLOSED</li>
-                        <li>Sunday: 05:00 - 22:00</li>
-                    </ul>
-                </div>
-            </div>
             <div class="col-md-5 col-md-push-1">
-                <div class="probootstrap-footer-widget">
-                    <h4>Links</h4>
-                    <ul class="probootstrap-footer-link float">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Programs</a></li>
-                        <li><a href="#">Gallery</a></li>
-                    </ul>
-                    <ul class="probootstrap-footer-link float">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                    <ul class="probootstrap-footer-link float">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Join The Club</a></li>
-                        <li><a href="#">Pricing</a></li>
-                    </ul>
-                </div>
+
                 <div class="probootstrap-footer-widget">
                     <h4>Contact Info</h4>
                     <ul class="probootstrap-contact-info">
-                        <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-                        <li><i class="icon-mail"></i><span>info@domain.com</span></li>
                         <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                        <li><i class="icon-location2"></i> <span>Młociny</span></li>
+                        <li><i class="icon-mail"></i><span>naftowyk@domain.com</span></li>
                     </ul>
                 </div>
             </div>
@@ -203,7 +176,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center border-top">
-                <p class="mb0">&copy; Copyright 2017 <a href="https://uicookies.com/">uiCookies:Trainer</a>. All Rights Reserved. <br> Designed by <a href="https://uicookies.com">uicookies.com</a> Demo Images Unsplash.com &amp; Pexels.com</p>
+                <p class="mb0">Copyrights  ©  Jaroslaw Khrunyk  www.jarofitrainer.pl 2019 Oficjalna strona i blog trenera profesionalnego. Strona nie jest ofertą handlową.</p>
             </div>
         </div>
     </div>

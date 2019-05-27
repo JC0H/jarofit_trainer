@@ -172,15 +172,32 @@
     </section>
 </main>
 <footer class="probootstrap-footer">
-<%--    <div class="probootstrap-backtotop"><a href="#" class="js-backtotop"><i class="icon-chevron-thin-up"></i></a></div>--%>
+    <div class="probootstrap-backtotop"><a href="#" class="js-backtotop"><i class="icon-chevron-thin-up"></i></a></div>
     <div class="container">
-        <div class="probootstrap-footer-widget">
-            <h4>Moje kontakty</h4>
-            <ul class="probootstrap-contact-info">
-                <li><i class="icon-location2"></i> <span>Metro Młociny</span></li>
-                <li><i class="icon-mail"></i><span>naftowyyk@domain.com</span></li>
-                <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
-            </ul>
+        <div class="row mb50">
+            <div class="col-md-3">
+                <div class="probootstrap-footer-widget">
+                    <h4>About The Site</h4>
+                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli. <a href="#">Learn More</a></p>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-push-1">
+
+                <div class="probootstrap-footer-widget">
+                    <h4>Contact Info</h4>
+                    <ul class="probootstrap-contact-info">
+                        <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
+                        <li><i class="icon-location2"></i> <span>Młociny</span></li>
+                        <li><i class="icon-mail"></i><span>naftowyk@domain.com</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center border-top">
+                <p class="mb0">Copyrights  ©  Jaroslaw Khrunyk  www.jarofitrainer.pl 2019 Oficjalna strona i blog trenera profesionalnego.</p>
+            </div>
         </div>
     </div>
 </footer>
