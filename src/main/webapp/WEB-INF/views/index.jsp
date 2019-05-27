@@ -38,7 +38,8 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
             <ul class="probootstrap-main-nav">
-                <li><a href="#"></a></li>
+                <li class="active"><a href="index">O mnie</a></li>
+                <li><a href="registration">Zapisy</a></li>
             </ul>
             <ul class="probootstrap-header-social hidden-xs">
                 <li><a href="https://www.facebook.com/yaroslavkhrunyk"><i class="icon-facebook2"></i></a></li>
