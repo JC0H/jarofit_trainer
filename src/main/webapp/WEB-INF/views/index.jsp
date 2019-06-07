@@ -92,7 +92,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 probootstrap-relative">
-                    <h2 class="probootstrap-heading mt0 mb50">Moje treningi</h2>
+                    <h2 class="probootstrap-heading mt0 mb50">$Trener Personalny</h2>
                     <ul class="probootstrap-owl-navigation absolute right">
                         <li><a href="#" class="probootstrap-owl-prev"><i class="icon-chevron-left"></i></a></li>
                         <li><a href="#" class="probootstrap-owl-next"><i class="icon-chevron-right"></i></a></li>
@@ -172,7 +172,6 @@
     </section>
 </main>
 <footer class="probootstrap-footer">
-    <div class="probootstrap-backtotop"><a href="#" class="js-backtotop"><i class="icon-chevron-thin-up"></i></a></div>
     <div class="container">
         <div class="row mb50">
             <div class="col-md-3">
@@ -184,7 +183,7 @@
             <div class="col-md-5 col-md-push-1">
 
                 <div class="probootstrap-footer-widget">
-                    <h4>Contact Info</h4>
+                    <h4>Kontakt</h4>
                     <ul class="probootstrap-contact-info">
                         <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
                         <li><i class="icon-location2"></i> <span>Młociny</span></li>

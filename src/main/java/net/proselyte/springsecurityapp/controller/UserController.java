@@ -72,5 +72,10 @@ public class UserController {
         return "index";
     }
 
+    @RequestMapping(value = {"/","/users"}, method = RequestMethod.GET)
+    public String users(Model model) {
+        model.addAttribute("userList",userService.getUserList());
 
+        return "test";
+    }
 }

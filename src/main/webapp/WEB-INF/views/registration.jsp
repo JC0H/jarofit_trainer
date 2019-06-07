@@ -134,7 +134,7 @@
                 </spring:bind>
 
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+                    <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Wyślij">
                 </div>
             </form:form>
             </div>
